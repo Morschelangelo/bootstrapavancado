@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versonews</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-nav .nav-link.active{
+            color: #fff;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: rgba(55, 60, 107, 0.95);
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .titulo{
+            color: white;
+            background-color:  rgb(0, 0, 0, 0.66);
+            text-align: center;
+            padding: 48px
+        }
+
+        body {
+            background-image: url(https://images.hdqwalls.com/wallpapers/galaxy-space-stars-universe-nebula-4k-qw.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .planets .galaxies .stars{
+            color: black;   
+        }
+
+        .card-img-top{
+
+        }
+ 
+    </style>
+</head>
+
+    <header id="header">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>Versonews</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hits">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planets">Planetas</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#stars">Estrelas</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#galaxies">Galaxias</a>
+                        </li>
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Reportes
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Buraco Negro</a></li>
+                                <li><a class="dropdown-item" href="#">Missil de Elon Musk</a></li>
+                                <li><a class="dropdown-item" href="#">Via-Lactea</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="container">
+        <div class="container">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card w-100">
+                        <img src="https://science.nasa.gov/wp-content/uploads/2023/09/Illustration_of_black_hole.jpeg?w=1280&format=webp" class="img-fluid card-img-top" alt="..." >
+                    <div class="card-body">
+                        <h5 class="card-title">Anatomia de um Buraco Negro.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur sed sapiente id</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card w-100">
+                        <img src="https://cdn.mos.cms.futurecdn.net/B3LKf9NJCPCzeUCGHG2PPh-1200-80.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Missil de Elon Musk explode após lançamento.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus quis enim aute</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card w-100">
+                        <img src="https://4.bp.blogspot.com/-yyXwn0sfDWI/U33lrnmw81I/AAAAAAAA2ig/EEdomHPaB_o/s1600/Via+L%C3%A1ctea.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantos corpos celestiais existem na Via Lactea?</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est molestias soluta dolore.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+        <div id="hits">
+            <h1 class="titulo">Destaques</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card text-bg-dark">
+                        <img class="img-fluid" src="https://img.freepik.com/premium-photo/desert-with-mountain-distance_871710-7585.jpg?w=740" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Marte</h4>
+                            <h5 class="card-subtitle">Sera possivel a colonização?</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a href="#" class="btn btn-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card text-bg-dark">
+                        <img class="img-fluid" src="https://wallpaperaccess.com/full/2621851.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Aquecimento Global</h4>
+                            <h5 class="card-subtitle">Consequências das ações humanas.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a href="#" class="btn btn-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card text-bg-dark">
+                        <img class="img-fluid" src="https://science.nasa.gov/wp-content/uploads/2023/09/blackhole_1600.jpg?w=1280&format=webp" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Buraco Negro</h4>
+                            <h5 class="card-subtitle">Foi fotografado um buraco negro pela primeira vez.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a href="#" class="btn btn-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="planets">
+            <h1 class="titulo">Planetas</h1>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://cdn.shopify.com/s/files/1/0742/7719/1954/files/gliese-581g-6_1024x1024.jpg?v=1682465181" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Gliese 667Cc</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni blanditiis itaque explicabo sunt, voluptatem minus aspernatur quidem quaerat? Sint perferendis corrupti aliquid quidem iste! Est, consequatur. Eaque illo quae quam.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/15F7D/production/_116318998_capture.png.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Proxima Centauri b</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi rem perspiciatis fuga. Inventore atque natus quia laudantium similique. Possimus quo eius repellendus odit cumque blanditiis fuga vitae iure inventore dicta!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://www.universetoday.com/wp-content/uploads/2018/05/TRAPPIST-1e_Artists_Impression-e1555184830466.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">TRAPPIST-1e</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae quasi voluptatum cupiditate quibusdam excepturi consequatur sequi quas. Quaerat dicta deleniti obcaecati pariatur! Quia, nostrum recusandae sunt cupiditate est aliquam!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stars"></section>
+            <h1 class="titulo">Estrelas</h1>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Andromeda_constellation_map.svg/800px-Andromeda_constellation_map.svg.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Alpheratz</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni blanditiis itaque explicabo sunt, voluptatem minus aspernatur quidem quaerat? Sint perferendis corrupti aliquid quidem iste! Est, consequatur. Eaque illo quae quam.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Andromeda_IAU.svg/800px-Andromeda_IAU.svg.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Mirach</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi rem perspiciatis fuga. Inventore atque natus quia laudantium similique. Possimus quo eius repellendus odit cumque blanditiis fuga vitae iure inventore dicta!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Andromeda_constellation_map.svg/800px-Andromeda_constellation_map.svg.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Gamma Andromedae</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae quasi voluptatum cupiditate quibusdam excepturi consequatur sequi quas. Quaerat dicta deleniti obcaecati pariatur! Quia, nostrum recusandae sunt cupiditate est aliquam!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galaxies"></section>
+        <h1 class="titulo">Galaxias</h1>
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Antennae_Galaxies_reloaded.jpg/800px-Antennae_Galaxies_reloaded.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">NGC 4038/NGC 4039</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni blanditiis itaque explicabo sunt, voluptatem minus aspernatur quidem quaerat? Sint perferendis corrupti aliquid quidem iste! Est, consequatur. Eaque illo quae quam.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/NGC_4622HSTFull.jpg/800px-NGC_4622HSTFull.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">NGC 4622</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi rem perspiciatis fuga. Inventore atque natus quia laudantium similique. Possimus quo eius repellendus odit cumque blanditiis fuga vitae iure inventore dicta!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3" >
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NGC_4826_-_HST.png/800px-NGC_4826_-_HST.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">Messier 64</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae quasi voluptatum cupiditate quibusdam excepturi consequatur sequi quas. Quaerat dicta deleniti obcaecati pariatur! Quia, nostrum recusandae sunt cupiditate est aliquam!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
